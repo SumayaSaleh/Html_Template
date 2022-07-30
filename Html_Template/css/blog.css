@@ -1,0 +1,55 @@
+
+/* 3.7-Blog page   */
+
+ 
+.blog-item
+{
+    border: 1px solid #e8e8e8;
+    background-color: var(--whiteColor);
+
+    
+}
+.blog-item.mg
+{
+    margin: 0 2%;
+}
+.blog-item img
+{
+width:100% ;
+}
+.blog-info
+{
+    
+    padding: 20px;
+}
+.blog-item-list li
+{
+    display: inline-block;
+    
+}
+.blog-item-list i
+{
+    color:var(--maincolor);
+    padding: 10px;
+
+}
+.blog-item-title
+{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px 0;
+    
+}
+.blog-item-desc
+{
+    
+   color: var(--graycolor);
+    line-height: 1.5;
+   
+}
+.blog-item-more {
+   display: inline-block;
+    color: var(--maincolor);
+   cursor: pointer;
+
+}

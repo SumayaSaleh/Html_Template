@@ -1,0 +1,66 @@
+
+/* services seection */
+
+
+.services-item
+{
+    width:50% ;
+}
+.services-item .section-header
+{
+    text-align: left;
+
+}
+.services-item .section-header .line
+{
+
+    margin: 0 0 50 0;
+}
+.services-item-desc
+{
+    padding-right: 20px;
+    line-height: 1.5;
+    color: var(--graycolor);
+    font-size:17px;
+}
+.services-item-list
+{
+    list-style: none;
+   
+    color: var(--graycolor);
+
+}
+.services-item-list li i
+{
+    color:var(--maincolor);
+    border: 1px solid var(--maincolor);
+    padding: 5px;
+    border-radius: 50%;
+
+}
+.services-item-img {
+    width: 100%;
+}
+
+.services-bollets { 
+    list-style: none;
+    text-align: center;
+}
+.services-bollets li
+{
+    width:15px;
+    height: 15px;
+    display: inline-block;
+    background-color: #e8e8e8;
+    margin:20px  10px;
+    border-radius: 50%;
+    border: 1px solid #e8e8e8;
+
+}
+.services-bollets li.active ,
+.services-bollets li:hover
+{
+    background-color:var(--maincolor);
+}
+
+

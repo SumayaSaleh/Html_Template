@@ -1,0 +1,88 @@
+
+/* 3.6-team section  */
+   
+.team-item{
+    background-color: #e8e8e8;
+    text-align: center;
+    padding: 40px 10px;
+}
+.team-item.mg
+{
+   margin: 0 2%;
+}
+.team-item .team-img
+{
+    width: 90%;
+    margin: auto;
+    /* to put the overlay in it in spiecifc position */
+    position: relative;
+}
+.team-item .team-img img
+{
+    width: 100%;
+}
+
+ .team-overlay
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    opacity: 0;
+    visibility: hidden;
+
+}
+.team-overlay a
+{
+    /* to make them ubder each other */
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--maincolor);
+    color: var(--whiteColor);
+    margin-left: auto;
+}
+.team-overlay a i{
+    line-height: 40px;
+    
+}
+
+
+.team-info-title
+{
+    color: #222;
+    margin: 10px 0; 
+
+   font-size:25px;
+   transition:color 0.5s;
+}
+.team-info-text
+{
+ color: var(--graycolor);
+    
+    font-size: 16px;
+    transition:color 0.5s;
+
+
+}
+.team-item:hover .team-overlay
+{
+    opacity: 1;
+    visibility: visible;
+}
+.team-item.ttb-affect
+{
+    z-index: 1;
+}
+.team-item:hover .team-info-title
+{ 
+ color: var(--whiteColor);
+ font-weight: bolder;
+}
+.team-item:hover .team-info-text
+{
+    color:var(--maincolor);
+    font-weight: bolder;
+}

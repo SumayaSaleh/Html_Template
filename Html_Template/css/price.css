@@ -1,0 +1,80 @@
+
+/* 3.5-Price  section  */
+
+.price
+ {
+    margin-top:400px ;
+ }
+.price-item
+{
+    border:  2px solid #e8e8e8;
+    text-align: center;
+    
+}
+
+.price-item.mg
+{
+    margin: 0 2%;
+}
+
+.price-item-title
+{
+    color: var(--graycolor);
+    padding: 20px;
+    transition: color 0.5s;
+}
+.price-info
+{
+    
+    width:120px;
+    height: 120px;
+    border: 2px solid var(--maincolor);
+    margin: auto;
+    border-radius: 50%;
+    padding-top: 20px;
+    transition: color 0.5s;
+}
+
+.price-info-price
+{
+font-size: 40px;
+}
+.price-info-month
+{
+    font-size: 14;
+font-weight: bolder;
+}
+
+
+.price-item-list 
+{ 
+  list-style: none;
+  margin-top: 10px;
+  padding: 30px;
+  color: var(--graycolor);
+  line-height: 1.5;
+}
+.price-item-burchase
+{
+    display: block;  
+    margin: 20px auto ;
+    /* width: 40%; */
+    border: 2px solid #7ba7ff;
+    background:none;
+    padding: 15px;
+    color: #7ba7ff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.price-item:hover .price-item-title
+{
+    color: #7ba7ff;
+}
+.price-item:hover .price-info-price,
+.price-item:hover .price-info-month
+
+{
+   color: white;
+}
+

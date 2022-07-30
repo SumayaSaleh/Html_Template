@@ -1,0 +1,30 @@
+
+/* statistics  section */
+.statistics
+{
+    position: relative;
+    height: 450px;
+    background-size: cover;
+    background-image: url("../image/background/background2.webp");
+    background-attachment: fixed;
+}
+.statistics-item
+{
+    width: 25%;
+    text-align: center;
+    padding: 130px 0;
+}
+.statistics-item .icon  
+{
+    color: var(--maincolor);
+}
+.statistics-item-title
+{
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--whiteColor);
+}
+.statistics-item-text
+{
+    color: var(--whiteColor);
+}

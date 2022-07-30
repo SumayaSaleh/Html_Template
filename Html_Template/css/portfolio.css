@@ -1,0 +1,128 @@
+
+/* 3.3-portfolio section  */
+
+
+
+.portfolio-item
+{ 
+ 
+  
+  position: relative;
+  padding: 20px;
+
+
+}
+/* to make the content info center we put them into another  div  to make it easy */
+.layer-content .layer-info
+{
+   position: absolute;
+   /* background-color: greenyellow; */
+   left: 50%;
+   top:50%;
+   transform: translate(-50%,-50%);
+   width: 80%;
+   text-align: center;
+
+}
+
+
+/* put the layer above the divs  */
+.portfolio-item .layer-content
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+    
+    
+}
+/* to make the transiction of the info layer  when we hover the portfolio section  */
+.portfolio-item:hover .layer-content
+{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* to make transition of info layer one by one we add position->relative and top 10px */
+.portfolio-item:hover .layer-content-title,
+.portfolio-item:hover .layer-content a,
+.portfolio-item:hover .layer-content .category
+{
+    top: 0;
+    opacity: 1;
+}
+.layer-content .category
+{
+    color:var(--maincolor);    /* to add margin */
+    display: block;
+    position: relative;
+    top: 10px;
+    opacity: 0;
+    transition:top 0.5s ,opacity 0.5s;
+    transition-delay: -2s;
+}
+.layer-content-title
+{
+    font-size: 20px;
+    color: var(--whiteColor);
+    position: relative;
+    top: 10px;
+    opacity: 0;
+    transition:top 0.5s ,opacity 0.5s;
+    transition-delay: 0.3s;
+
+    
+
+}
+
+/* links setting  */
+/* we can remove this and join it in one step in i  */
+ /* .layer-content a 
+ { 
+     background-color: #6195ff;
+     display: inline-block;
+     width: 40px;
+     height: 40px;
+    
+ } */
+ .layer-content a 
+ {
+    color: var(--whiteColor);
+     position: relative;
+    top: 10px;
+    opacity: 0;
+    transition:top 0.5s ,opacity 0.5s;
+    transition-delay: 0.3s;
+
+
+ }
+
+ .layer-content a i
+ {
+     
+    background-color: var(--maincolor);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+      /* put ant inline-block center */
+     line-height:40px ;
+     }
+/* set the size  */
+
+.portfolio-item img
+{
+    /* from its  div parent  */
+    width: 100%;
+}
+
+/* set the margin */
+.portfolio-item.mg
+{
+
+   margin:0 2%;
+}

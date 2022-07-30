@@ -1,0 +1,454 @@
+/* index
+  1-common styles 
+  2-general styles 
+  3-sections
+        3.0- header section
+        3.1-home section 
+        3.2-about section 
+        3.3-portfolio section 
+        3.4-services section 
+        3.5-price section 
+        3.6-team section 
+        3.7-blog section 
+        3.8-contact section
+        3.9-footer section
+
+
+
+ */
+/* 1-common features  */
+/* 
+ 
+ 1-overlay
+ -Opacity hover 
+ -general title underline |section header 
+ -section passing after and before each header 
+ -hover effect 1(left to right )
+ -hover effect 2 (top to bottom)
+
+
+
+*/
+
+/* 1-overlay */
+.overlay
+{
+    width:100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color:rgba(0,0,0,0.5);
+    
+
+}
+/* 2-opacity hover */
+.hover-opacity:hover
+{ 
+    /* to determine the speed of transtion */
+    transition: opacity .5s;
+
+}
+.hover-opacity:hover
+{
+  opacity: 0.8;
+
+}
+
+.ltr-effect , .ttb-affect
+{
+    position: relative;
+}
+.ltr-effect::after ,.ttb-affect::after
+
+
+{
+position: absolute;
+content: "";
+top:0;
+left:0;
+right:0;
+bottom: 0;
+z-index:-1; /* to show up afer the text*/
+background-color: #333;
+
+}
+
+.ltr-effect::after
+{
+    width: 0;
+    transition: width 0.5s;
+   
+}
+
+
+.ttb-affect::after
+{
+/* the opposite of ltr-affect we put width 100 and height 0 */
+    
+    height: 0;
+    transition: height 0.5s;
+    
+}
+
+.ltr-effect:hover:after
+{
+    width: 100%;
+    
+}
+
+.ttb-affect:hover:after
+{
+    height: 100%;
+    
+    
+}
+
+
+
+
+
+
+/*2-general css style*/
+/* universal selector */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*css3* which means that the border and padding wil
+    l be taken from the size it self*/
+
+}
+/* font customize */
+:root
+{
+    --maincolor: #6195ff;
+    --graycolor: #999;
+    --bg-gray: #f9f9f9;
+    --whiteColor:#fff;
+
+
+}
+
+body
+{
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+/*container   */
+.container
+{
+    width: 80%;
+   
+    
+    margin: auto;
+}
+
+
+/* to solve float problem  */
+
+.clear
+{
+    clear: both;
+} 
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: sans-serif;
+
+}
+button
+{
+    font-family: inherit;
+}
+a
+{
+    text-decoration: none;
+}
+li
+{
+    list-style:none;
+}
+
+
+
+/* 3.1-home section  */
+.home
+{
+    height:100vh;
+    background-image: url("../image/background/background1.webp");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-top:20px ;
+}
+.overlay
+{
+    width:100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color:rgba(0,0,0,0.5);
+    
+
+}
+
+.home-content
+{
+   /* background-color: greenyellow; */
+   position: absolute;
+   width:65%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+   
+}
+.home-title
+{
+    color: var(--whiteColor);
+    font-size: 2.5rem;
+    
+}
+.home-desc
+{
+    margin: 20px 0 ;
+    color: var(--whiteColor);
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+ .btn
+{
+    min-width: 160px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.home .btn-start
+{
+    margin-right: 10px;
+}
+
+.home .btn-learn
+{
+    margin-right: 10px;
+    background-color:var(--maincolor);
+    color: var(--whiteColor);
+}
+
+
+
+/* 3.2-about section  */ 
+ .about-item
+ {
+
+    
+    text-align: center;
+    border:2px solid #e8e8e8;
+    padding: 50px 20px;
+ }
+ /* one element has this all classes */
+ .about-item.mg 
+ {
+   
+        margin:0 2%;
+
+ }
+ .about-item .icon
+ {
+   color: var(--maincolor);
+  
+ }
+ .about-item-title
+ {
+    
+    transition: color 0.5s;
+   
+}
+.about-item-desc
+{
+    line-height: 1.6;
+    color: var(--graycolor);
+    
+}
+
+.about-item-link
+{
+    color: var(--maincolor);
+}
+.about-item:hover .about-item-title
+{
+    color: var(--whiteColor);
+}
+
+
+/* 3.8-Contact  section  */
+
+.contact-content
+{
+overflow: hidden;
+}
+.contact-item
+{   
+    width:32%;
+    text-align: center;
+    float: left;
+}
+.contact-item-info .icon
+{
+    
+    color:var(--maincolor);
+
+}
+.contact-info-title
+{
+    text-transform: capitalize;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.contact-info-no
+{
+    color: #888;
+
+}
+.form-content
+{
+    position: relative;
+    margin:  160px 0;
+    
+    
+}
+.form-item 
+{
+   width: 63%;
+   height: 250px;
+   position: absolute;
+   top: 50%;
+   left:47%;
+   transform: translate(-50% ,-50%);
+   margin-left: 20px;
+   margin-top: 20px;
+
+}
+
+.form-item input
+{
+    outline-color:#999;
+    font-size: large;
+    border-color: beige;
+    background-color: #f9f9f9;
+    color:#999;
+}
+.form-item-name ,.form-item-email
+{
+    width: 47%;
+    padding: 10px;
+    
+    
+} 
+.form-item-email
+{
+    
+    margin-left: 20px;
+}
+.form-item-subject , .form-item-m
+{
+    margin-top: 10px;
+    width: 97%;
+    padding: 0.5em;
+    
+    
+    
+    
+    margin-top: 20px;
+}
+.form-item-m
+{
+    display: block;
+    padding: 0.5em 3em 4em 0.5em;
+    
+}
+.btn-send
+{   
+    
+    background-color: var(--maincolor);
+    color: #fff;
+    margin-top: 30px;
+    position: absolute;
+    top:110%;
+    left:50%;
+    transform: translate(-50% ,-50%);
+
+
+    
+}
+/* .form-content
+{
+   
+    padding: 250px;
+    
+}
+   
+.form-info
+{ 
+    position: absolute;
+     margin: auto;
+
+}
+
+.form-info-name
+{
+ 
+float: left
+} */
+
+
+
+/* 3.9-footer section */
+
+
+.footer{
+
+   background-color: #1c1d21;
+   padding: 50px 0;
+   text-align: center;
+   margin-top: 10%;
+   
+}
+
+.footer-list li
+{ 
+    display: inline-block;
+    margin: 50px 0;
+   
+}
+.footer-list li a
+{ 
+   
+  display: block;
+   width:50px;
+   height: 50px;
+   background-color: var(--maincolor);
+   color: var(--whiteColor);
+   margin: 0 5px;
+   border-radius: 50%;
+   
+
+}
+.footer-list li a i
+{
+   line-height: 50px;
+}
+.footer-desc
+{
+    color: var(--graycolor);
+    font-size: 15px;
+    
+}

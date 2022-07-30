@@ -1,0 +1,45 @@
+
+/* 3.4-offers section  */
+
+.offers-item
+{
+   
+    position: relative;
+    border:1px solid #e8e8e8;
+    /* to put icon beside the title  */
+    padding:30px  15px 30px 70px;
+
+    /* text-align: center; */
+}
+.offers-item .icon
+{
+    position: absolute;
+    top:30;
+    left:25;
+}
+.offers-item.mg
+{
+
+   margin:0 2%;
+}
+.offers-item .icon
+{
+    color: var(--maincolor);
+}
+.offers-item-title
+{
+    font-size: 20px;
+    transition: color 0.5s;
+}
+.offers-item:hover .offers-item-title
+{
+    color: white;
+}
+
+.offers-item-desc
+{
+    
+    line-height: 1.6;
+    color: var(--graycolor);
+
+}

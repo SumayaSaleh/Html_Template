@@ -1,0 +1,539 @@
+/* common  */
+.category-1:hover
+{
+  color: #6195ff;
+  font-size: 18px;
+}
+
+/* 
+  sub-header
+
+*/
+.clear
+{
+  clear: both;
+}
+
+/* .sub-header
+{
+    
+} */
+.sub-header .title
+{
+   width: 40%;
+   padding-top: 30px;
+}
+.sub-header .sub-nav 
+{
+    width: 60%;
+    text-align: right;
+}
+.sub-header .sub-nav li
+{
+    display: inline-block;
+    font-size: 18px;
+    padding: 0.3rem;
+}
+
+.sub-header .sub-nav .single-post
+
+{
+  color: #888;
+}
+
+.sub-header .sub-nav li a
+{
+    display: block;
+    padding: 30px 0;
+}
+
+
+.sub-nav
+{
+    overflow: hidden;
+}
+.sub-nav ul li
+{
+  float: left;
+}
+
+
+/* section-one */
+
+.section-one
+{
+ 
+  position: relative;
+}
+
+/* .section-content-left
+{
+    overflow: hidden;
+} */
+
+/* left---------------------------------------------- */
+
+.section-item-left
+{
+  
+   width: 65%;
+   
+  
+   
+   
+}
+.section-item-left img
+{
+ width: 100%;
+}
+.left-info
+{
+  padding: 20px 20px 20px 0;
+}
+.left-info .item-list li 
+{
+  float: left;
+  margin: 10px 10px 10px 0;
+  color: #6195ff;
+}
+
+
+.item-list li  i
+{
+  padding: 0.5em;
+
+}
+.item-left-title
+{
+  font-size: 18px;
+}
+.item-left-desc
+{
+  line-height: 1.5;
+  color: #888;
+}
+
+/* left tags  */
+
+.left-tags
+{
+  width:65%;
+  position: relative;
+  margin-top: 40px;
+}
+.tags-list
+{
+  width: 100%;
+  display: inline-block;
+  margin-left: 50px;
+
+}
+.tags-list li
+{
+ 
+ float: left;
+ border: 1px solid #e8e8e8;
+ background-color: #f9f9f9;
+ margin: 20px 3px;
+ padding: 7px;
+ cursor: pointer;
+}
+
+.tags-list li i
+{
+ color: #6195ff;
+
+}
+
+.left-tags .lable
+{
+  position: absolute;
+  display: inline-block;
+  font-weight: bold;
+  top:2;
+  left:0;
+  padding: 20px 0;
+  font-size: 1.1em;
+ 
+}
+
+/* blogger-section */
+
+
+.blogger-item
+{
+  position: relative;
+  width:65%;
+  border: 1px solid #e8e8e8;
+  
+
+}
+
+.blogger-img
+{
+  width: 20%;
+  margin: 40px 0;
+  margin-left: 15px;
+
+}
+.blogger-img img
+{
+  
+   width: 100%;
+}
+.blogger-info
+{
+ position: absolute;
+ top: 20%;
+ left: 25%;
+}
+.blogger-info .desc
+{
+  display: inline-block;
+  color: #999;
+  padding-top:  30px;
+  line-height: 1.5;
+}
+
+
+.blogger-social
+{
+
+position: absolute;
+top: 20%;
+right: 0;
+}
+.social-list li
+{
+   display: inline-block;
+   width: 30px;
+   background-color: #6195ff;
+   text-align: center;
+   margin-right:20px;
+   width:15%;
+  
+}
+
+
+.social-list i
+{
+  color: white;
+  padding: 10px;
+  
+
+}
+
+/* comments section */
+
+.comments
+{
+ margin-top: 3rem;
+
+}
+
+.comments-item
+{
+  margin-top: 3rem;
+  position: relative;
+  width:65%;
+  border: 1px solid #e8e8e8;
+  background-color:#f9f9f9 ;
+
+}
+
+
+.comment-img
+{
+  width: 20%;
+  margin: 40px 0;
+  margin-left: 15px;
+
+}
+.comment-img img
+{
+  
+   width: 60%;
+}
+.comment-info
+{
+ position: absolute;
+ top: 25%;
+ left: 18%;
+}
+.comment-info .comment-name
+{
+font-size:20px;
+font-weight:bold;
+font-family: inherit;
+}
+.comment-info .time
+{
+  display: inline-block;
+  font-size: 14px;
+}
+.comment-info .desc
+{
+  display: inline-block;
+  color: #999;
+  padding-top: 10px;
+  line-height: 1.5;
+}
+
+.reply-info
+{
+  display: inline-block;
+   position: absolute;
+   top: 20%;
+   right: 6%;
+   color: #6195ff;
+   
+  
+}
+.reply-img
+{
+  position: absolute;
+   top: 21%;
+   right: 3%;
+   color: #6195ff;
+   cursor: pointer;
+  
+}
+/* reply section  */
+
+
+.reply-item
+{
+  margin-top: 30px;
+  width: 65%;
+  position: relative;
+
+}
+.name
+{
+
+width:49%;
+height:40px;
+outline-color:#999;
+padding-left: 10px;
+font-size: large;
+border-color: beige;
+background-color: #f9f9f9;
+color:#999;
+}
+.email
+{
+  
+width:50%;
+height:40px;
+padding-left: 10px;
+outline-color:#999;
+font-size: large;
+border-color: beige;
+background-color: #f9f9f9;
+color:#999;
+}
+
+.message
+{
+ 
+  width:99%;
+  height:90px;
+  padding-left: 10px;
+  outline-color:#999;
+  font-size: large;
+  border-color: beige;
+  background-color: #f9f9f9;
+  color:#999;
+  margin-top: 20px;
+
+}
+
+.submit
+{
+  margin-top: 20px;
+  background-color: #6195ff;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* right ------------------------------------------- */
+.section-content-right
+{
+  width: 35%;
+}
+.section-item-right
+{
+  position: absolute;
+  top:4.5%;
+  left:68%;
+ 
+}
+.search
+{ 
+    position: relative;
+    outline-color:#999;
+    font-size: large;
+    border-color: beige;
+    background-color: #f9f9f9;
+    width: 50%;
+    color:#888;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.search-icon
+{
+
+  position: absolute;
+  top:0;
+  right: 50%;
+  margin: 15px 15px;
+  cursor: pointer;
+  color: #6195ff;
+}
+.category-header .line
+{
+  display: block;
+  background-color: #6195ff;
+  width: 50px;
+  height:4px;
+  margin:5px 5px 5px 0;
+}
+.category
+{
+  /* border:  solid 3px #f9f9f9; */
+  margin-top: 30px;
+  width: 100%;
+  
+}
+.category-list
+{
+ 
+  width: 50%;
+  
+  
+}
+.category-list .category-1 li
+{
+  float:left;
+  position: absolute;
+  top:10;
+  left: 5;
+  padding-right: 10px;
+  
+
+  
+}
+.category-1
+{
+  position: relative;
+  border:  solid 3px #f9f9f9;
+  padding: 10px;
+  height: 45px;
+  margin-bottom: 20px;
+ 
+  
+}
+.category-1 .comments-no
+{
+  position: absolute;
+  top:10px;
+  right: 0;
+  color: #6195ff;
+  padding-right:10px;
+  cursor: pointer;
+}
+.category-list .category-2 li
+{
+  float:left;
+  position: absolute;
+  top:10;
+  left: 5;
+  padding-right: 10px;
+
+  
+}
+
+
+/* popular-post */
+.post-item
+{
+  position: relative;
+  width: 60%;
+}
+
+.post-img
+{
+  width :40%;
+}
+
+
+.post-img img
+{
+  width:80%;
+  margin-right: 20px;
+}
+
+
+.post-info
+{
+  position: absolute;
+  top:0;
+  right:0;
+  margin-left: px;
+  
+
+}
+.post-info .post-title
+{
+  font-size: 18px;
+  margin-bottom: 10px;
+ 
+ 
+}
+.post-info .post-desc
+{
+  color: #6195ff;
+}
+
+
+
+/* tags */
+
+
+
+.links
+{
+
+  display: inline-block;
+  border: 1px solid #e8e8e8 ;
+  width: 15%;
+  padding: 10px;
+  margin-right:15px;
+  background-color: #f9f9f9;
+  text-align: center;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+
+.new
+{
+  display: inline-block;
+ 
+  width: 24%;
+}
+
+
+.tags-item a:hover
+{
+  color: black;
+  opacity: 0.8;
+  background-color: #6195ff;
+  font-size:17;
+}
+
+
+
+
